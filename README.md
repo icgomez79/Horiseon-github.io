@@ -16,7 +16,7 @@
 ### IN CSS:
 * Added the following comments between sections to facilitate the code reading.
 ```/*Apply styles to header*/, /* Apply styles to hero*/,/*Apply styles to benefits*/,/*Apply styles to footer*/```.
-* _Consolidated this elements:_
+* **Consolidated this elements:**
 ```.benefit-lead {
     margin-bottom: 32px;
     color: #ffffff;
@@ -37,7 +37,7 @@
 }
 ```
 Because all had the same styles properties, I added a ```<div>``` child element to its parent ```<div class="benefits">```.
-* _Erasing this css elements:_
+* **Erasing this css elements:**
 ``` .benefit-lead h3 {
     margin-bottom: 10px;
     text-align: center;
@@ -57,7 +57,7 @@ Because all had the same styles properties, I added a ```<div>``` child element 
     text-align: center;
     }
 ```
-* _Consolidated these elements:_
+* **Consolidated these elements:**
 ```.benefit-lead img {
     display: block;
     margin: 10px auto;
@@ -83,7 +83,7 @@ Because all had the same styles properties, I added a ```<div>``` child element 
 ```
 They all belonged to the same parent element ```<div class="benefits">``` and they have the same style properties.
 
-* _Changed the name of these elements:_
+* **Changed the name of these elements:**
 ``` .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
@@ -120,7 +120,7 @@ They all belonged to the same parent element ```<div class="benefits">``` and th
 }
 ```
 They all belong to the same parent element ```<div class="content">``` and inside a '<div>' element, so I was able to consolidated them in one css element. 
-* _Changed these elements that have the same style properties:_
+* **Changed these elements that have the same style properties:**
 ```.search-engine-optimization img {
     max-height: 200px;
     }'
@@ -150,6 +150,7 @@ This was posible because they all belong to the parent element ```<div class="co
 
 You can check the improved website in this link https://icgomez79.github.io/horiseon-github.io/
 
+© 2020 Horiseon. All rights reserved. 
  
 
 
