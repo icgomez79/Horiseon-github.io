@@ -127,7 +127,7 @@ They all belonged to the same parent element ```<div class="benefits">``` and th
     color: #ffffff;
 }
 ```
-They all belong to the same parent element ```<div class="content">``` and inside a '<div>' element, so I just consolidated them in one css element. 
+They all belong to the same parent element ```<div class="content">``` and inside a ```<div>``` element, so I just consolidated them in one css element. 
 * **Changed these elements that have the same style properties:**
 ```
     .search-engine-optimization img {
