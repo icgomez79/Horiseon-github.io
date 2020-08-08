@@ -1,164 +1,22 @@
-# horiseon-github.io/Code Refactor
+# Horiseon Website
 
-## For the Horiseon website these are the changes that I had to make to improve the functionality and accessibility of the website:
+This website gives you information about Horiseon and the services that they offer.
 
-### In HTML:
-* Added the following comments between sections to facilitate the code reading.
-```<!--Navigation-->,<!--Unordered list-->,<!--List elements-->,<!--Anchor elements-->,<!--Hero section-->,<!--Benefits section-->,<!--Footer-->```.
-* Added the tags ```<header></header>```
-* Fixed the link for the ```<a href="#search-engine-optimization">``` changing the ```<div class="search-engine-optimization" class="search-engine-optimization">``` for ```<div id="search-engine-optimization" class="search-engine-optimization">```.
-* Added the ```alt=``` values for each image in the file to ensure accesibility.
+This website meets the accesibilty standars.
 
-#### This is how it looks the html file now:
+## Installation
 
-<img width="1440" alt="Screen Shot 2020-08-08 at 10 21 46 AM" src="https://user-images.githubusercontent.com/68663064/89712793-2db34580-d961-11ea-803a-de0462906b13.png">
+Visit the website:
 
-### IN CSS:
-* Added the following comments between sections to facilitate the code reading.
-```/*Apply styles to header*/, /* Apply styles to hero*/,/*Apply styles to benefits*/,/*Apply styles to footer*/```.
-* **Consolidated this elements:**
-```
-    .benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-    }
-    .benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-    }
-    .benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-    }
-```
-**For this:**
-```
-    .benefits div {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-```
-Because all had the same styles properties, I added a ```<div>``` child element to its parent ```<div class="benefits">```.
-* **Erasing this css elements:**
-``` 
-    .benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-    }
-    .benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-    }
-    '.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-    }
-```
- And because there is only one h3 element inside the ```<div class="benefits">``` and they all have the same styles properties, now the css code looks like this:
-``` 
-    h3 {
-    margin-bottom: 10px;
-    text-align: center;
-    }
-```
-* **Consolidated these elements:**
-```
-    .benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-    }
-    .benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-    }
-    .benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-    }
-```
-**For this:**
-``` 
-    .benefits img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-    }
-```
-They all belonged to the same parent element ```<div class="benefits">``` and they have the same style properties.
+https://icgomez79.github.io/horiseon-github.io/
 
-* **Changed the name of these elements:**
-``` 
-    .search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-    }
-    .online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-    }
-    .social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-    }
-```
-**For this:**
-``` 
-    .content div {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-```
-They all belong to the same parent element ```<div class="content">``` and inside a ```<div>``` element, so I just consolidated them in one css element. 
-* **Changed these elements that have the same style properties:**
-```
-    .search-engine-optimization img {
-    max-height: 200px;
-    }'
-'.online-reputation-management img {
-    max-height: 200px;
-    }'
-'.social-media-marketing img {
-    max-height: 200px;
-    }
-```
-**For this:**
-```
-    .content img {
-    max-height: 200px;
-        }
-```
-This was posible because they all belong to the same parent element ```<div class="content">``` and ```<img>```
-* Finally, in order to have a better classification and easy reading of the css code I moved the ```.content``` css element and ```.content img``` to the top of the file where all the other content elements were placed.
+## Usage
 
-#### This is an example of the previous css code:
-
-<img width="1440" alt="Screen Shot 2020-08-07 at 6 58 06 PM" src="https://user-images.githubusercontent.com/68663064/89694949-521b0d80-d8e0-11ea-892c-605d1b71a90f.png">
-
-#### This is how it looks now:
-
-<img width="1440" alt="Screen Shot 2020-08-07 at 6 53 53 PM" src="https://user-images.githubusercontent.com/68663064/89694935-3fa0d400-d8e0-11ea-8d9a-d0c216ec9be5.png">
+Click on the ```<search-engine-optimization>, <online-reputation-managment> and <social-media-marketing>``` and it will take you to the section on the website that gives you more information about these topics.
 
 
-You can check the improved website in this link https://icgomez79.github.io/horiseon-github.io/
+<img width="1440" alt="Screen Shot 2020-08-08 at 11 18 18 AM" src="https://user-images.githubusercontent.com/68663064/89713914-ee88f280-d968-11ea-8277-c723fcfe9a9d.png">
+
 
 
 © 2019 Horiseon Social Solution Services, Inc. 
