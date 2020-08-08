@@ -9,15 +9,16 @@
 * Fixed the link for the ```<a href="#search-engine-optimization">``` changing the ```<div class="search-engine-optimization" class="search-engine-optimization">``` for ```<div id="search-engine-optimization" class="search-engine-optimization">```.
 * Added the ```alt=``` values for each image in the file to ensure accesibility.
 
-#### This is how it looks the html file now...
+#### This is how it looks the html file now:
 
-<img width="1440" alt="Screen Shot 2020-08-07 at 6 50 58 PM" src="https://user-images.githubusercontent.com/68663064/89694878-12542600-d8e0-11ea-9dc3-2142986f452f.png">
+<img width="1440" alt="Screen Shot 2020-08-08 at 10 21 46 AM" src="https://user-images.githubusercontent.com/68663064/89712793-2db34580-d961-11ea-803a-de0462906b13.png">
 
 ### IN CSS:
 * Added the following comments between sections to facilitate the code reading.
 ```/*Apply styles to header*/, /* Apply styles to hero*/,/*Apply styles to benefits*/,/*Apply styles to footer*/```.
 * **Consolidated this elements:**
-```.benefit-lead {
+```
+    .benefit-lead {
     margin-bottom: 32px;
     color: #ffffff;
     }
@@ -30,15 +31,17 @@
     color: #ffffff;
     }
 ```
-**For this**
-```.benefits div {
+**For this:**
+```
+    .benefits div {
     margin-bottom: 32px;
     color: #ffffff;
 }
 ```
 Because all had the same styles properties, I added a ```<div>``` child element to its parent ```<div class="benefits">```.
 * **Erasing this css elements:**
-``` .benefit-lead h3 {
+``` 
+    .benefit-lead h3 {
     margin-bottom: 10px;
     text-align: center;
     }
@@ -52,13 +55,15 @@ Because all had the same styles properties, I added a ```<div>``` child element 
     }
 ```
  And because there is only one h3 element inside the ```<div class="benefits">``` and they all have the same styles properties, now the css code looks like this:
-``` h3 {
+``` 
+    h3 {
     margin-bottom: 10px;
     text-align: center;
     }
 ```
 * **Consolidated these elements:**
-```.benefit-lead img {
+```
+    .benefit-lead img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
@@ -75,7 +80,8 @@ Because all had the same styles properties, I added a ```<div>``` child element 
     }
 ```
 **For this:**
-``` .benefits img {
+``` 
+    .benefits img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
@@ -84,7 +90,8 @@ Because all had the same styles properties, I added a ```<div>``` child element 
 They all belonged to the same parent element ```<div class="benefits">``` and they have the same style properties.
 
 * **Changed the name of these elements:**
-``` .search-engine-optimization {
+``` 
+    .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -109,8 +116,9 @@ They all belonged to the same parent element ```<div class="benefits">``` and th
     color: #ffffff;
     }
 ```
-**For this**
-``` .content div {
+**For this:**
+``` 
+    .content div {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -119,9 +127,10 @@ They all belonged to the same parent element ```<div class="benefits">``` and th
     color: #ffffff;
 }
 ```
-They all belong to the same parent element ```<div class="content">``` and inside a '<div>' element, so I was able to consolidated them in one css element. 
+They all belong to the same parent element ```<div class="content">``` and inside a '<div>' element, so I just consolidated them in one css element. 
 * **Changed these elements that have the same style properties:**
-```.search-engine-optimization img {
+```
+    .search-engine-optimization img {
     max-height: 200px;
     }'
 '.online-reputation-management img {
@@ -131,26 +140,28 @@ They all belong to the same parent element ```<div class="content">``` and insid
     max-height: 200px;
     }
 ```
-**For this**
-```.content img {
+**For this:**
+```
+    .content img {
     max-height: 200px;
         }
 ```
-This was posible because they all belong to the parent element ```<div class="content">``` and ```<img>```
+This was posible because they all belong to the same parent element ```<div class="content">``` and ```<img>```
 * Finally, in order to have a better classification and easy reading of the css code I moved the ```.content``` css element and ```.content img``` to the top of the file where all the other content elements were placed.
 
-#### This is an example of the previous css code...
+#### This is an example of the previous css code:
 
 <img width="1440" alt="Screen Shot 2020-08-07 at 6 58 06 PM" src="https://user-images.githubusercontent.com/68663064/89694949-521b0d80-d8e0-11ea-892c-605d1b71a90f.png">
 
-#### This is how it looks now...
+#### This is how it looks now:
 
 <img width="1440" alt="Screen Shot 2020-08-07 at 6 53 53 PM" src="https://user-images.githubusercontent.com/68663064/89694935-3fa0d400-d8e0-11ea-8d9a-d0c216ec9be5.png">
 
 
 You can check the improved website in this link https://icgomez79.github.io/horiseon-github.io/
 
-© 2020 Horiseon. All rights reserved. 
+
+© 2019 Horiseon Social Solution Services, Inc. 
  
 
 
