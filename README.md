@@ -2,7 +2,7 @@
 
 This website gives you information about Horiseon and the services that they offer.
 
-This website meets the accesibilty standars.
+This website meets the accessibilty standars.
 
 ## Installation
 
